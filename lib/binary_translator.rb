@@ -1,4 +1,5 @@
 class BinaryTranslator
+
   def initialize
     @alpha_to_binary = {
       "a" => "000001",
@@ -29,4 +30,9 @@ class BinaryTranslator
       "z" => "011010"
     }
   end
+
+  def translate(a)
+    @alpha_to_binary[a.downcase]
+  end
+
 end
